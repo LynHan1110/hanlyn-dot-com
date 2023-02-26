@@ -1,0 +1,43 @@
+html * {
+    max-height: 99999px
+}
+
+body {
+    margin: 0
+}
+
+#wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(auto,1fr) 250px
+}
+
+#game {
+    overflow: hidden
+}
+
+#text-output {
+    overflow: auto;
+    margin: 10px;
+    font-size: 18px;
+    border: 1px dotted black;
+    line-height: 150%
+}
+
+#text-output>div {
+    padding: 10px
+}
+
+#text-output>div:nth-child(odd) {
+    background-color: #eee
+}
+
+#text-output>div:nth-child(even) {
+    background-color: #ddd
+}
+
+#text-output em {
+    font-weight: 700;
+    text-decoration: underline;
+    font-style: normal
+}
